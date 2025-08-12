@@ -2,7 +2,6 @@
 import { useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import { nextTick, provide } from "vue";
-import { Analytics } from "@vercel/analytics/next"
 import HomePage from "../components/HomePage.vue";
 
 const { isDark } = useData();
