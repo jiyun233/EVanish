@@ -5,7 +5,7 @@ export default defineConfig({
   title: "E-Vanish",
   description: "A MUG studio project offical website",
   themeConfig: {
-    logo: "/logo.png",
+    // logo: null,
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },

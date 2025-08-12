@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
+const { frontmatter } = useData();
 import DefaultTheme from "vitepress/theme";
 import { nextTick, provide } from "vue";
 import HomePage from "../components/HomePage.vue";
@@ -42,6 +43,16 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 <template>
   <DefaultTheme.Layout>
+    <template v-if="frontmatter.layout === 'home'" #home-hero-image>
+      <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; max-width: 36vw;">
+          <iframe src="//player.bilibili.com/player.html?bvid=BV1UoJPzbEcE&autoplay=0"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px;"
+            frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+        </div>
+      </div>
+    </template>
+
     <template #home-features-after>
       <HomePage />
       <Analytics />

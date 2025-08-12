@@ -6,11 +6,11 @@ hero:
   name: "电波湮灭"
   text: "E-Vanish"
   tagline: A MUG studio project offical website
-  image: "/icon.png"
-  actions:
-    - theme: brand
-      text: View all solutions
-      link: /all-solutions
+  # image: "/icon.png"
+  # actions:
+  #   - theme: brand
+  #     text: View all solutions
+  #     link: /all-solutions
 
 features:
   - title: "湮灭余韵 E-Aftertone"
