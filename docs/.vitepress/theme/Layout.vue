@@ -39,6 +39,10 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
     }
   );
 });
+
+const refreshPage = () => {
+  window.location.reload()
+}
 </script>
 
 <template>
@@ -58,6 +62,15 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
       <Analytics />
     </template>
   </DefaultTheme.Layout>
+  <button @click="refreshPage" class="refresh-btn" :class="{ dark: isDark }" title="刷新页面">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round" class="icon">
+      <polyline points="23 4 23 10 17 10"></polyline>
+      <polyline points="1 20 1 14 7 14"></polyline>
+      <path d="M3.51 9a9 9 0 0 1 14.86-3.36L23 10"></path>
+      <path d="M20.49 15a9 9 0 0 1-14.86 3.36L1 14"></path>
+    </svg>
+  </button>
 </template>
 
 <style>
@@ -83,5 +96,36 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 .VPSwitchAppearance .check {
   transform: none !important;
+}
+
+.refresh-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  background-color: #161616;
+  color: white;
+}
+.refresh-btn.dark {
+  background-color: #cacaca;
+  color: #1e1e1e;
+}
+.refresh-btn:hover {
+  filter: brightness(1.1);
+}
+.icon {
+  width: 24px;
+  height: 24px;
 }
 </style>
