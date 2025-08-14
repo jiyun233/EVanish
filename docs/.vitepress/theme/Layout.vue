@@ -47,6 +47,7 @@ const refreshPage = () => {
 
 <template>
   <DefaultTheme.Layout>
+
     <template v-if="frontmatter.layout === 'home'" #home-hero-image>
       <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
         <div style="position: relative; width: 100%; padding-bottom: 56.25%; max-width: 36vw;">
@@ -113,19 +114,28 @@ const refreshPage = () => {
   align-items: center;
   justify-content: center;
   transition: background-color 0.2s ease, color 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   background-color: #161616;
   color: white;
 }
+
 .refresh-btn.dark {
   background-color: #cacaca;
   color: #1e1e1e;
 }
+
 .refresh-btn:hover {
   filter: brightness(1.1);
 }
+
 .icon {
   width: 24px;
   height: 24px;
+}
+
+.custom-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 </style>

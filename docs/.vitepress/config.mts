@@ -5,8 +5,6 @@ export default defineConfig({
   title: "E-Vanish",
   description: "A MUG studio project offical website",
   themeConfig: {
-    // logo: null,
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
       {
@@ -44,8 +42,7 @@ export default defineConfig({
       },
     ],
     footer: {
-      message: "Copyright © 2024 - 2025 E-Vanish, E-Aftertone",
-      copyright: "E-Craft All Rights Reserved.",
+      message: "Copyright © 2024 - 2025 E-Vanish, E-Aftertone, E-Craft All Rights Reserved.",
     },
   },
 });

@@ -101,12 +101,6 @@
     #223c5b
   );
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    rgba(132, 132, 132, 0.3),
-    rgb(240, 240, 240)
-  );
-  --vp-home-hero-image-filter: blur(44px);
 }
 
 @media (min-width: 640px) {
@@ -172,6 +166,14 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+
+.VPNavBarTitle span::after {
+  content: " Version.1.0.1 [1]";
+  font-size: 0.8rem;
+  color: #999;
+  margin-left: 0.4rem;
+}
+
 /**
    * Component: Navbar
    * -------------------------------------------------------------------------- */

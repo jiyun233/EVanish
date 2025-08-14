@@ -19,10 +19,10 @@ const events = computed(() => [
 <template>
   <div flex="~ col wrap" mt8 items-center>
     <h2 class="out-team-title" text="center gray xl" mt-11 mb-4 pb-2>
-      {{ 'Recent Events' }}
+      {{ '计划中的项目' }}
     </h2>
     <h2 class="out-team-text" text="center gray xl" mt-11 mb-4 pb-2>
-      {{ '计划中的项目.' }}
+      {{ 'Recent Events' }}
     </h2>
     <VPFeatures class="w-full px-4" size="small" :features="events" />
   </div>
