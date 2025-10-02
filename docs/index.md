@@ -17,5 +17,6 @@ features:
     details: 电波湮灭E-Vanish旗下工作室
   - title: "余波造物 E-Craft"
     details: 电波湮灭、湮灭余韵官方授权文创周边品牌
+    link: "https://m.tb.cn/h.S5TWigG7BMU7Xn9"
 ---
 
