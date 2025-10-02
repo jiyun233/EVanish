@@ -44,12 +44,12 @@ const events = computed(() => [
 }
 .hero-image {
   filter: invert(1) hue-rotate(180deg);
-  max-width: 20%;
+  max-width: 25%;
   height: auto;
   object-fit: contain;
 }
 .multiply-sign {
-  font-size: 10rem;
+  font-size: 4rem;
   font-weight: bold;
 
   color: #000;
