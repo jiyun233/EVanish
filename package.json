@@ -9,5 +9,11 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0"
-  }
+  },
+  "name": "EVanish",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jiyun233/EVanish.git",
+  "author": "jiyun233 <jjiyun114514@163.com>",
+  "license": "MIT"
 }

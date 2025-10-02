@@ -168,7 +168,7 @@
 }
 
 .VPNavBarTitle span::after {
-  content: " Version.1.0.1 [1]";
+  content: " Version.1.1.2 [1]";
   font-size: 0.8rem;
   color: #999;
   margin-left: 0.4rem;
